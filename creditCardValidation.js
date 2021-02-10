@@ -35,7 +35,7 @@ function dateValidation(date) {
 	// todays date.
 	let today = new Date();
 	// let date = String(today.getDate()).padStart(2, '0');
-	let month = String(today.getMonth() + 1).padStart(2, '0'); 
+	let month = (today.getMonth() + 1).toString().padStart(2, '0'); 
 	let yyyy = today.getFullYear().toString();
 	
 		
