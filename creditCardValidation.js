@@ -13,7 +13,7 @@ function creditCardValidation(creditCard) {
 	isTrue = ( sum % 10 === 0 ? 0 : 10 - (sum % 10));
 	if (isTrue)
 		return isTrue
-	console.log("Invalid Credit Card Number!!");
+	// console.log("Invalid Credit Card Number!!");
 	return false;
 }
 
@@ -25,7 +25,7 @@ function nameValidation(name) {
 	if (name.match(matches)) {
 		return true;
 	}
-	console.log("Invalid Name!!");
+	// console.log("Invalid Name!!");
 	return false;
 }
 
@@ -57,11 +57,11 @@ function dateValidation(date) {
 	yy = pdate[1]
 	
 	if ( yyyy.slice(2,4) > yy) {
-		console.log("Invalid Date!!");
+		// console.log("Invalid Date!!");
 		return false
 	}
 	if (month > mm && yyyy.slice(2,4) === yy) {
-		console.log("Invalid Date!!");
+		// console.log("Invalid Date!!");
 		return false
 	}
 	
@@ -87,7 +87,7 @@ function validationCreditCard(creditCard, name, date, cvv) {
 	if (creditCardValidation(creditCard) && nameValidation(name) && dateValidation(date) && cvvValidation(cvv)) {
 		return true;
 	}
-	console.log("Correct Your Invalid Inputs");
+	// console.log("Correct Your Invalid Inputs");
 	return false;
 }
 
