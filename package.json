@@ -4,7 +4,7 @@
   "description": "Credit Card details validation testing",
   "main": "creditCardValidation.js",
   "scripts": {
-    "test": "jest | coveralls"
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "author": "ajay-8192",
   "license": "ISC",
