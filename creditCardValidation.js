@@ -56,11 +56,11 @@ function dateValidation(date) {
 	mm = pdate[0]
 	yy = pdate[1]
 	
-	if ( yyyy.toString().slice(2,4) > yy) {
+	if ( yyyy.slice(2,4) > yy) {
 		console.log("Invalid Date!!");
 		return false
 	}
-	if (month.toString() > mm && yyyy.toString().slice(2,4) === yy) {
+	if (month > mm && yyyy.slice(2,4) === yy) {
 		console.log("Invalid Date!!");
 		return false
 	}
